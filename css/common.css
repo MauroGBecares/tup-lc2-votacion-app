@@ -31,7 +31,7 @@
     --grafica-verde-claro: rgba(102, 171, 60, 0.5);
     --mensaje-usuario-amarillo: #ffc107;
     --mensaje-usuario-verde: #28a745;
-
+    --mensaje-usuario-rojo: #dc3545;
 }
 * {
     font-family: 'Roboto';
@@ -77,6 +77,26 @@ header ul{
     background-color: var(--fondo-Menu);
     width: 100%;
 }
+
+.sec-messages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-messages *{
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: #FFffFF;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+}
+#mensaje-exitoso{ background-color: var(--mensaje-usuario-verde);}
+#mensaje-error{ background-color: var(--mensaje-usuario-rojo);}
+#mensaje-alerta { background-color: var(--mensaje-usuario-amarillo);}
 /* header ul {
     background-color: var(--fondo-Menu);
     margin: 0px;
