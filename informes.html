@@ -1,42 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sistema de Publicación de Resultados Electorales</title>
-    <link rel="shortcut icon" type="image/png" href="img/icons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/png" href="./img/icons/favicon-16x16.png">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/pages/informes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Estilos CSS -->
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/pages/informes.css">
 </head>
 
 <body>
     <header>
         <!--Barra de logo portal-->
         <div class="header-page">
-            <a href="index.html"><img src="img/icons/Logo_DINE_negativo.a88f983e.png" alt="logo" class="logo"></a>
+            <a href="./index.html"><img src="./img/Logo_DINE_negativo.png" alt="logo" class="logo"></a>
         </div>
         <!--Barra de menú principal-->
-        <ul class="menu-bar">
-            CONSULTAR:
-            <a href="paso.html"><button class="paso-button">Paso</button></a>
-            <a href="generales.html"><button class="generales-button">Generales</button></a>
-            <a href="index.html"><button class="inicio">Inicio</button></a>
-        </ul>
+        <div class="header-menu">
+            <ul>
+                <li>
+                    <p>CONSULTAR:</p>
+                </li>
+                <li class="nav-paso"><a class="active" href="./paso.html">PASO</a></li>
+                <li class="nav-generales"><a class="active" href="./generales.html">GENERALES</a></li>
+                <li class="inicio"><a class="active" href="./index.html">INICIO</a></li>
+            </ul>
+        </div>
     </header>
     <!-- Contenido principal de la página -->
     <main>
-        <section class="sec-messages">
-            <div id="mensaje-exitoso">Se agrego con éxito el resultado al informe</div>
-            <div id="mensaje-error">Error: Se produjo un error al intentar agregar resultados al informe</div>
-            <div id="mensaje-alerta">La operación no se pudo completar</div>
-        </section>
         <section class="sec-titulo">
-            <!--Seccion para agregar una palicula favorita por codigo-->
             <h1>Reporte de elecciones</h1>
+        </section>
+        <section id="sec-messages">
+            <div class="green message">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <p>Se agregó con éxito el resultado al informe</p>
+            </div>
+            <div class="red message">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p>Error.Se produjo un error al intentar agregar resultados al informe</p>
+            </div>
+            <div class="yellow message">
+                <i class="fa-solid fa-exclamation"></i>
+                <p>La operación no se pudo completar</p>
+            </div>
         </section>
         <section id="sec-contenido">
             <div class="container-grilla-informes">
@@ -62,7 +73,7 @@
                         <td class="eleccion">
                             <div class="flex-td">
                                 <p class="texto-elecciones-chico">Elecciones 2020 | Generales</p>
-                                <p class="texto-path-chico">2020 > Generales > Provisorio > Senadores
+                                <p class="texto-path-chico">2021 > Generales > Provisorio > Senadores
                                     Nacionales > Buenos Aires</p>
                             </div>
                         </td>
@@ -297,9 +308,11 @@
         <img src="img/icons/logos_001-10.4430c8d5.png" alt="">
         <p>
             Resultados Provisorios en base a telegramas recibidos (Art. 43 Ley 26571 y Art. 105 Ley 19945). Los
-            porcentajes de las agrupaciones políticas son calculados sobre los votos válidos (PASO) conforme al art. 45
-            Ley 26.571 y afirmativos (Generales). No se incluyen los votos correspondientes a los electores residentes
-            en el exterior ni privados de la libertad. Al usar este sitio usted acepta los <a>Términos y Condiciones</a>
+            porcentajes de las agrupaciones políticas son calculados sobre los votos válidos (PASO) conforme al art.
+            45
+            Ley 26.571 y afirmativos (Generales). No se incluyen los votos correspondientes a los electores
+            residentes en el exterior ni privados de la libertad. Al usar este sitio usted acepta los
+            <a href="about:blank">Términos y condiciones.</a>
         </p>
     </footer>
 </body>
