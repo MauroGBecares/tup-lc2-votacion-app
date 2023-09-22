@@ -66,7 +66,51 @@ header {
     width: 100%;
     margin: 0px auto auto auto;
 }
-
+.inicio{
+    background-color: var(--gris-claro);
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFF;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 8px;
+    float: right;
+    width: 100px;
+    height: 32px;
+}
+.inicio:hover{
+    color: var(--textos);
+}
+.paso-button{
+    background-color: var(--magenta);
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFF;
+    font-size: 10px;
+    text-align: center;
+    width: 100px;
+    height: 32px;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+.paso-button:hover{
+    background-color: var(--gris-claro);
+}
+.generales-button{
+    background-color: var(--celeste);
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    width: 100px;
+    height: 32px;
+    text-transform: uppercase;
+}
+.generales-button:hover{
+    background-color: var(--gris-claro);
+}
 .header-page img {
     width: 150px;
 }
